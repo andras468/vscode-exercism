@@ -1,0 +1,55 @@
+		"commands": [
+			{
+				"command": "track.openTrack",
+				"title": "Open track",
+				"icon": {
+					"light": "resources/light/folder.svg",
+					"dark": "resources/dark/folder.svg"
+				}
+			},
+			{
+				"command": "track.refreshEntries",
+				"title": "Refresh",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
+				}
+			},
+			{
+				"command": "track.openEntry",
+				"title": "Open",
+				"icon": {
+					"light": "resources/light/edit.svg",
+					"dark": "resources/dark/edit.svg"
+				}
+			},
+			{
+				"command": "track.submitEntry",
+				"title": "Submit"
+			}
+		],
+		"menus": {
+			"view/title": [
+				{
+					"command": "track.refreshEntries",
+					"when": "view == track",
+					"group": "navigation"
+				},
+				{
+					"command": "track.openTrack",
+					"when": "view == track"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "track.openEntry",
+					"when": "view == tract && viewItem == exercism",
+					"group": "inline"
+				},
+				{
+					"command": "track.submitEntry",
+					"when": "view == tract && viewItem == exercism"
+				}
+			]
+		}
+	},
