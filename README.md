@@ -1,12 +1,8 @@
-# exercismextension README
-
-This is the README for your extension "exercismextension". After writing up a brief description, we recommend including the following sections.
+# Exercism extension
 
 ## Features
 
 This extension helps to download and submit Exercism exercises.
-
-For example if there is an image subfolder under your extension project workspace:
 
 \!\[feature X\]\(images/feature-x.png\)
 
@@ -14,7 +10,7 @@ For example if there is an image subfolder under your extension project workspac
 
 ## Requirements
 
-Installed and configured Exercism environment.
+Installed and configured Exercism environment. It can be downloaded from here: https://exercism.io
 
 ## Extension Settings
 

@@ -72,6 +72,27 @@
 					"group": "inline"
 				}
 			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "Exercism configuration options",
+			"properties": {
+				"exercism.rootUrl": {
+					"type": "string",
+					"default": "https://exercism.io/my/",
+					"description": "URL to the exercims website without tracks and ecercises."
+				},
+				"exercism.rootPath": {
+					"type": "string",
+					"default": "C:/Exercism",
+					"description": "Root path where the exercism track folders located."
+				},
+				"exercism.executable": {
+					"type": "string",
+					"default": "C:\\Exercism\\exercism.exe",
+					"description": "Exercism executable that is used to download and submit the exercises."
+				}
+			}
 		}
 	},
 	"scripts": {

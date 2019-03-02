@@ -10,11 +10,10 @@ export class TrackProvider implements vscode.TreeDataProvider<Node> {
     // private track: string;
 
 	constructor() {
-        this.rootPath = "C:/Exercism";
-		// this.track = "csharp";
-	
-		console.log('Tracks provider constructor');
-
+		this.rootPath = vscode.workspace.getConfiguration("exercism").get("rootPath") ? 
+			vscode.workspace.getConfiguration("exercism").get("rootPath") as string : "C:\\Exercism";
+		
+		console.log(this.rootPath);
 	}
 
 	refresh(): void {
